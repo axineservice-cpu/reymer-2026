@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -990,5 +989,6 @@
             </p>
             <div class="pcard__specs-title">Apresentações disponíveis</div>
             <div class="pcard__tags">
+
 
 
