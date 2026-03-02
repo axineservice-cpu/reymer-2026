@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reymer — Catálogo de Produtos 2026</title>
+  <meta name="description"
+    content="Catálogo oficial Reymer 2026 — Linha completa de Oral Care, Higiene, Géis de Contato Premium e Repelente." />
+  <meta name="keywords"
+    content="Reymer, higiene, oral care, gel de contato, repelente, antisséptico, catálogo 2026, Goiânia" />
+  <meta name="author" content="Reymer" />
+  <meta property="og:title" content="Reymer — Catálogo 2026" />
+  <meta property="og:description"
+    content="Linha completa de Oral Care, Higiene e Géis de Contato Premium." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://seuusuario.github.io/reymer-2026/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <style>
+    /* ==========================================
+       VARIÁVEIS
+    ========================================== */
+    :root {
+      --blue:        #0A2540;
+      --blue-mid:    #1A4A7A;
+      --cyan:        #00B4D8;
+      --cyan-light:  #90E0EF;
+      --cyan-pale:   #CAF0F8;
+      --orange:      #FF6B35;
+      --white:       #FFFFFF;
+      --bg:          #F4F9FC;
+      --text:        #0A2540;
+      --muted:       #5E7D99;
+      --border:      #D4E8F0;
+      --card:        #FFFFFF;
+      --shadow-sm:   0 2px 12px rgba(10,37,64,.08);
+      --shadow-md:   0 8px 32px rgba(10,37,64,.12);
+      --shadow-lg:   0 20px 60px rgba(10,37,64,.18);
+      --r-sm: 8px; --r-md: 16px; --r-lg: 24px; --r-xl: 32px;
+      --font:  'Inter', sans-serif;
+      --title: 'Sora', sans-serif;
+      --ease:  0.3s cubic-bezier(0.4,0,0.2,1);
+    }
+    [data-theme="dark"] {
+      --bg:    #0D1B2A;
+      --text:  #E8F4FD;
+      --muted: #8BAFC7;
+      --border:#1E3650;
+      --card:  #132233;
+      --shadow-sm: 0 2px 12px rgba(0,0,0,.35);
+      --shadow-md: 0 8px 32px rgba(0,0,0,.45);
+    }
+
+    /* ==========================================
+       RESET
+    ========================================== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      transition: background var(--ease), color var(--ease);
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* ==========================================
+       UTILITÁRIOS
+    ========================================== */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+
+    .tag-label {
+      display: inline-block;
+      font-size: .7rem; font-weight: 700;
+      letter-spacing: .14em; text-transform: uppercase;
+      color: var(--cyan); margin-bottom: 10px;
+    }
+    .sec-title {
+      font-family: var(--title);
+      font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+      font-weight: 800; line-height: 1.2;
+      color: var(--text); margin-bottom: 14px;
+    }
+    .sec-sub {
+      font-size: 1rem; color: var(--muted);
+      max-width: 540px; line-height: 1.7;
+    }
+
+    /* ==========================================
+       NAVBAR
+    ========================================== */
+    .nav {
+      position: sticky; top: 0; z-index: 200;
+      background: rgba(10,37,64,.97);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(0,180,216,.18);
+    }
+    .nav__inner {
+      max-width: 1200px; margin: 0 auto; padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 66px;
+    }
+    .nav__logo {
+      font-family: var(--title); font-size: 1.45rem;
+      font-weight: 800; color: #fff; letter-spacing: -.02em;
+    }
+    .nav__logo em { font-style: normal; color: var(--cyan); }
+    .nav__links {
+      display: flex; align-items: center; gap: 4px;
+    }
+    .nav__links a {
+      font-size: .85rem; font-weight: 500;
+      color: rgba(255,255,255,.7); padding: 7px 13px;
+      border-radius: var(--r-sm);
+      transition: color var(--ease), background var(--ease);
+    }
+    .nav__links a:hover { color: #fff; background: rgba(0,180,216,.14); }
+    .nav__right { display: flex; align-items: center; gap: 10px; }
+
+    .btn-icon {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-family: var(--font); font-size: .8rem; font-weight: 500;
+      background: none; border: 1px solid rgba(255,255,255,.18);
+      color: rgba(255,255,255,.75); border-radius: var(--r-sm);
+      padding: 7px 13px; cursor: pointer;
+      transition: all var(--ease);
+    }
+    .btn-icon:hover { border-color: var(--cyan); color: var(--cyan); }
+    .btn-icon svg { width: 15px; height: 15px; }
+
+    .hamburger {
+      display: none; flex-direction: column; gap: 5px;
+      background: none; border: none; cursor: pointer; padding: 4px;
+    }
+    .hamburger span {
+      display: block; width: 22px; height: 2px;
+      background: #fff; border-radius: 2px;
+      transition: all var(--ease);
+    }
+
+    /* drawer mobile */
+    .nav__drawer {
+      position: fixed; top: 66px; left: 0; right: 0;
+      background: rgba(8,28,48,.98);
+      backdrop-filter: blur(16px);
+      padding: 20px 24px 32px;
+      display: flex; flex-direction: column; gap: 4px;
+      transform: translateY(-110%); opacity: 0;
+      pointer-events: none;
+      transition: all var(--ease);
+      border-bottom: 1px solid rgba(0,180,216,.2);
+      z-index: 199;
+    }
+    .nav__drawer.open { transform: translateY(0); opacity: 1; pointer-events: all; }
+    .nav__drawer a {
+      font-size: .95rem; font-weight: 500;
+      color: rgba(255,255,255,.75); padding: 12px 16px;
+      border-radius: var(--r-sm);
+      transition: all var(--ease);
+    }
+    .nav__drawer a:hover { color: #fff; background: rgba(0,180,216,.12); }
+
+    /* ==========================================
+       HERO
+    ========================================== */
+    .hero {
+      position: relative; min-height: 94vh;
+      display: flex; align-items: center; overflow: hidden;
+      background: linear-gradient(135deg, #0A2540 0%, #0D3360 45%, #0A4A6E 100%);
+    }
+    .hero__grid {
+      position: absolute; inset: 0; pointer-events: none;
+      background-image:
+        linear-gradient(rgba(0,180,216,.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,180,216,.07) 1px, transparent 1px);
+      background-size: 56px 56px;
+    }
+    .hero__blob {
+      position: absolute; border-radius: 50%; filter: blur(90px);
+      animation: blobFloat 10s ease-in-out infinite; pointer-events: none;
+    }
+    .hero__blob--a { width: 640px; height: 640px; background: var(--cyan); opacity: .18; top: -220px; right: -80px; }
+    .hero__blob--b { width: 380px; height: 380px; background: #0055AA; opacity: .22; bottom: -80px; left: -60px; animation-delay: 4s; }
+    .hero__blob--c { width: 260px; height: 260px; background: var(--orange); opacity: .08; top: 35%; right: 28%; animation-delay: 7s; }
+    @keyframes blobFloat { 0%,100%{transform:translateY(0) scale(1)} 50%{transform:translateY(-28px) scale(1.04)} }
+
+    .hero__inner {
+      position: relative; z-index: 2;
+      max-width: 1200px; margin: 0 auto; padding: 96px 24px 80px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center;
+    }
+
+    /* texto */
+    .hero__pill {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(0,180,216,.14); border: 1px solid rgba(0,180,216,.32);
+      border-radius: 100px; padding: 6px 16px;
+      font-size: .73rem; font-weight: 700; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--cyan-light); margin-bottom: 22px;
+    }
+    .hero__pill-dot {
+      width: 6px; height: 6px; background: var(--cyan);
+      border-radius: 50%; animation: dot 2.2s ease-in-out infinite;
+    }
+    @keyframes dot { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.4;transform:scale(.75)} }
+
+    .hero__h1 {
+      font-family: var(--title);
+      font-size: clamp(2.2rem, 4.8vw, 3.9rem);
+      font-weight: 800; line-height: 1.1; letter-spacing: -.03em;
+      color: #fff; margin-bottom: 22px;
+    }
+    .hero__h1 .hl {
+      background: linear-gradient(135deg, var(--cyan), var(--cyan-light));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero__p {
+      font-size: 1.05rem; color: rgba(255,255,255,.68);
+      line-height: 1.72; margin-bottom: 38px; max-width: 460px;
+    }
+    .hero__ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 48px; }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: var(--font); font-size: .88rem; font-weight: 600;
+      padding: 13px 26px; border-radius: var(--r-md); cursor: pointer; border: none;
+      transition: all var(--ease);
+    }
+    .btn svg { width: 17px; height: 17px; }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--cyan), #0096C7);
+      color: #fff; box-shadow: 0 8px 24px rgba(0,180,216,.4);
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 14px 36px rgba(0,180,216,.55); }
+    .btn-ghost {
+      background: rgba(255,255,255,.1); color: #fff;
+      border: 1px solid rgba(255,255,255,.22); backdrop-filter: blur(8px);
+    }
+    .btn-ghost:hover { background: rgba(255,255,255,.18); transform: translateY(-2px); }
+
+    .hero__stats {
+      display: flex; gap: 36px;
+      padding-top: 32px; border-top: 1px solid rgba(255,255,255,.1);
+    }
+    .hero__stat-n {
+      font-family: var(--title); font-size: 2rem;
+      font-weight: 800; color: #fff;
+    }
+    .hero__stat-l { font-size: .78rem; color: rgba(255,255,255,.45); margin-top: 2px; }
+
+    /* visual / cards */
+    .hero__visual { position: relative; }
+    .hero__stack { position: relative; max-width: 400px; margin: 0 auto; }
+    .hero__card {
+      background: rgba(255,255,255,.07);
+      backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
+      border: 1px solid rgba(255,255,255,.13);
+      border-radius: var(--r-lg); padding: 26px;
+    }
+    .hero__card--front { position: relative; z-index: 2; }
+    .hero__card--back {
+      position: absolute; top: -14px; left: 18px; right: -18px; z-index: 1;
+      opacity: .45; transform: scale(.95);
+    }
+    .hero__card-img {
+      width: 100%; height: 180px;
+      background: linear-gradient(135deg, rgba(0,180,216,.18), rgba(0,100,180,.1));
+      border-radius: var(--r-md); margin-bottom: 18px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .hero__card-img svg { width: 72px; height: 72px; opacity: .55; }
+    .hero__card-name {
+      font-family: var(--title); font-weight: 700; font-size: 1rem;
+      color: #fff; margin-bottom: 8px;
+    }
+    .hero__card-pill {
+      background: rgba(0,180,216,.2); color: var(--cyan-light);
+      font-size: .68rem; font-weight: 700; padding: 3px 10px;
+      border-radius: 100px; text-transform: uppercase; letter-spacing: .08em;
+    }
+
+    /* ==========================================
+       CATEGORIA NAV
+    ========================================== */
+    .cat-section { padding: 80px 0; background: var(--bg); }
+    .cat-header { text-align: center; margin-bottom: 52px; }
+    .cat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+      gap: 18px;
+    }
+    .cat-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--r-md); padding: 28px 22px;
+      display: flex; flex-direction: column; align-items: center; gap: 14px;
+      text-align: center; cursor: pointer;
+      transition: all var(--ease);
+    }
+    .cat-card:hover { border-color: var(--cyan); box-shadow: var(--shadow-md); transform: translateY(-4px); }
+    .cat-icon {
+      width: 60px; height: 60px;
+      background: linear-gradient(135deg, var(--cyan-pale), rgba(0,180,216,.15));
+      border-radius: var(--r-md);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .cat-icon svg {
+      width: 28px; height: 28px;
+      fill: none; stroke: var(--cyan); stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round;
+    }
+    .cat-name { font-family: var(--title); font-weight: 700; font-size: .95rem; color: var(--text); }
+    .cat-count { font-size: .78rem; color: var(--muted); margin-top: -8px; }
+
+    /* ==========================================
+       SECTION HEADER (faixa escura por categoria)
+    ========================================== */
+    .sec-band {
+      position: relative; overflow: hidden;
+      background: linear-gradient(135deg, #0A2540 0%, #0E3460 100%);
+      padding: 64px 0 52px;
+    }
+    .sec-band__wave {
+      position: absolute; bottom: -1px; left: 0; right: 0; line-height: 0;
+    }
+    .sec-band__inner {
+      max-width: 1200px; margin: 0 auto; padding: 0 24px;
+      display: flex; align-items: flex-end; justify-content: space-between; gap: 20px;
+    }
+    .sec-band__tag {
+      font-size: .7rem; font-weight: 700; letter-spacing: .16em;
+      text-transform: uppercase; color: var(--cyan); margin-bottom: 8px;
+    }
+    .sec-band__h2 {
+      font-family: var(--title); font-size: clamp(1.7rem, 3.5vw, 2.8rem);
+      font-weight: 800; color: #fff; line-height: 1.15;
+    }
+    .sec-band__badge {
+      background: rgba(0,180,216,.15); border: 1px solid rgba(0,180,216,.3);
+      color: var(--cyan-light); font-size: .78rem; font-weight: 600;
+      padding: 7px 18px; border-radius: 100px; white-space: nowrap;
+    }
+
+    /* ==========================================
+       GRID DE PRODUTOS
+    ========================================== */
+    .products { padding: 60px 0; }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 22px;
+    }
+
+    /* CARD */
+    .pcard {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--r-md); overflow: hidden;
+      display: flex; flex-direction: column;
+      opacity: 0; transform: translateY(22px);
+      transition: opacity .65s ease, transform .65s ease, box-shadow var(--ease), border-color var(--ease);
+    }
+    .pcard.visible { opacity: 1; transform: translateY(0); }
+    .pcard:hover { box-shadow: var(--shadow-md); border-color: var(--cyan); transform: translateY(-5px); }
+
+    .pcard__img {
+      width: 100%; height: 210px; position: relative; overflow: hidden;
+      background: linear-gradient(135deg, var(--cyan-pale) 0%, #DDF4F8 100%);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .pcard__img img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform var(--ease);
+    }
+    .pcard:hover .pcard__img img { transform: scale(1.06); }
+    .pcard__placeholder {
+      display: flex; flex-direction: column; align-items: center; gap: 10px;
+    }
+    .pcard__placeholder svg {
+      width: 52px; height: 52px;
+      fill: none; stroke: var(--cyan); stroke-width: 1.6;
+      stroke-linecap: round; stroke-linejoin: round; opacity: .6;
+    }
+    .pcard__placeholder span { font-size: .72rem; color: var(--muted); }
+
+    .pcard__badge {
+      position: absolute; top: 14px; left: 14px;
+      background: var(--cyan); color: #fff;
+      font-size: .68rem; font-weight: 700;
+      padding: 3px 10px; border-radius: 100px;
+      text-transform: uppercase; letter-spacing: .08em;
+    }
+    .pcard__badge--orange { background: var(--orange); }
+
+    .pcard__body { padding: 22px; display: flex; flex-direction: column; flex: 1; }
+    .pcard__cat {
+      font-size: .68rem; font-weight: 700; letter-spacing: .13em;
+      text-transform: uppercase; color: var(--cyan); margin-bottom: 6px;
+    }
+    .pcard__name {
+      font-family: var(--title); font-size: 1.1rem; font-weight: 700;
+      color: var(--text); margin-bottom: 8px; line-height: 1.3;
+    }
+    .pcard__desc {
+      font-size: .85rem; color: var(--muted);
+      line-height: 1.65; margin-bottom: 18px; flex: 1;
+    }
+
+    .pcard__specs-title {
+      font-size: .7rem; font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--text); margin-bottom: 8px;
+    }
+    .pcard__tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }
+    .pcard__tag {
+      background: var(--bg); border: 1px solid var(--border);
+      color: var(--text); font-size: .73rem; font-weight: 500;
+      padding: 3px 9px; border-radius: var(--r-sm);
+    }
+    [data-theme="dark"] .pcard__tag {
+      background: rgba(0,180,216,.08); border-color: rgba(0,180,216,.18);
+    }
+
+    .pcard__footer {
+      border-top: 1px solid var(--border); padding-top: 14px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .pcard__contact { font-size: .75rem; color: var(--muted); }
+    .pcard__cta {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: .78rem; font-weight: 600; color: var(--cyan);
+      transition: gap var(--ease);
+    }
+    .pcard__cta:hover { gap: 9px; }
+    .pcard__cta svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 2.2; }
+
+    /* ==========================================
+       SEÇÃO TERCEIRIZAÇÃO
+    ========================================== */
+    .terc {
+      padding: 88px 0;
+      background: linear-gradient(135deg, #0A2540 0%, #0E3460 100%);
+      position: relative; overflow: hidden;
+    }
+    .terc__blob {
+      position: absolute; width: 520px; height: 520px;
+      background: var(--cyan); border-radius: 50%; filter: blur(110px);
+      opacity: .07; top: -200px; right: -100px; pointer-events: none;
+    }
+    .terc__inner {
+      position: relative; z-index: 2;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;
+    }
+    .terc__label { font-size: .7rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--cyan); margin-bottom: 10px; }
+    .terc__h2 {
+      font-family: var(--title); font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 800; color: #fff; line-height: 1.15; margin-bottom: 18px;
+    }
+    .terc__p { color: rgba(255,255,255,.65); font-size: .98rem; line-height: 1.75; margin-bottom: 34px; }
+    .terc__feats { display: flex; flex-direction: column; gap: 14px; }
+    .terc__feat {
+      display: flex; align-items: flex-start; gap: 16px;
+      background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1);
+      border-radius: var(--r-md); padding: 18px;
+      transition: all var(--ease);
+    }
+    .terc__feat:hover { background: rgba(0,180,216,.1); border-color: rgba(0,180,216,.28); }
+    .terc__feat-icon {
+      width: 42px; height: 42px; flex-shrink: 0;
+      background: rgba(0,180,216,.18); border-radius: var(--r-sm);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .terc__feat-icon svg { width: 20px; height: 20px; stroke: var(--cyan); fill: none; stroke-width: 2; stroke-linecap: round; }
+    .terc__feat-h { font-weight: 600; color: #fff; font-size: .92rem; margin-bottom: 3px; }
+    .terc__feat-p { font-size: .8rem; color: rgba(255,255,255,.52); line-height: 1.5; }
+
+    .terc__cta-box {
+      background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1);
+      border-radius: var(--r-lg); padding: 40px;
+      display: flex; flex-direction: column; align-items: flex-start; gap: 20px;
+    }
+    .terc__cta-title {
+      font-family: var(--title); font-size: 1.5rem; font-weight: 700; color: #fff;
+    }
+    .terc__cta-p { font-size: .9rem; color: rgba(255,255,255,.6); line-height: 1.6; }
+    .terc__cta-items { width: 100%; display: flex; flex-direction: column; gap: 10px; }
+    .terc__cta-item {
+      display: flex; align-items: center; gap: 10px;
+      font-size: .85rem; color: rgba(255,255,255,.75);
+    }
+    .terc__cta-item svg { width: 18px; height: 18px; stroke: var(--cyan); fill: none; stroke-width: 2; flex-shrink: 0; }
+
+    /* ==========================================
+       CONTATO
+    ========================================== */
+    .contact { padding: 80px 0; }
+    .contact__card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--r-xl); padding: 56px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center;
+      box-shadow: var(--shadow-lg);
+    }
+    .contact__h2 {
+      font-family: var(--title); font-size: clamp(1.5rem, 3vw, 2.2rem);
+      font-weight: 800; color: var(--text); margin-bottom: 12px;
+    }
+    .contact__p { color: var(--muted); line-height: 1.7; margin-bottom: 36px; }
+    .contact__items { display: flex; flex-direction: column; gap: 18px; }
+    .contact__item { display: flex; align-items: center; gap: 14px; }
+    .contact__item-icon {
+      width: 46px; height: 46px; flex-shrink: 0;
+      background: linear-gradient(135deg, var(--cyan-pale), rgba(0,180,216,.18));
+      border-radius: var(--r-md);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .contact__item-icon svg { width: 20px; height: 20px; stroke: var(--cyan); fill: none; stroke-width: 2; stroke-linecap: round; }
+    .contact__item-lbl { font-size: .7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
+    .contact__item-val { font-size: .95rem; font-weight: 600; color: var(--text); }
+
+    .contact__map {
+      background: linear-gradient(135deg, #0A2540, #1A4A7A);
+      border-radius: var(--r-lg); height: 300px;
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px;
+    }
+    .contact__map svg { width: 48px; height: 48px; stroke: rgba(255,255,255,.3); fill: none; stroke-width: 1.5; }
+    .contact__map-txt { font-size: .82rem; color: rgba(255,255,255,.4); text-align: center; }
+
+    /* ==========================================
+       FOOTER
+    ========================================== */
+    footer {
+      background: #050F1A; padding: 52px 0 28px;
+    }
+    .footer__top {
+      display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 48px;
+      padding-bottom: 36px; border-bottom: 1px solid rgba(255,255,255,.07);
+      margin-bottom: 28px;
+    }
+    .footer__logo {
+      font-family: var(--title); font-size: 1.4rem;
+      font-weight: 800; color: #fff; margin-bottom: 10px;
+    }
+    .footer__logo em { font-style: normal; color: var(--cyan); }
+    .footer__tagline { font-size: .85rem; color: rgba(255,255,255,.38); line-height: 1.6; max-width: 260px; margin-bottom: 22px; }
+    .footer__col-h { font-size: .7rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.35); margin-bottom: 16px; }
+    .footer__links { display: flex; flex-direction: column; gap: 9px; }
+    .footer__links a { font-size: .85rem; color: rgba(255,255,255,.5); transition: color var(--ease); }
+    .footer__links a:hover { color: var(--cyan); }
+    .footer__bottom {
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+    }
+    .footer__copy { font-size: .78rem; color: rgba(255,255,255,.28); }
+    .footer__yr {
+      background: rgba(0,180,216,.14); border: 1px solid rgba(0,180,216,.24);
+      color: var(--cyan); font-size: .72rem; font-weight: 700;
+      padding: 4px 12px; border-radius: 100px;
+    }
+
+    /* ==========================================
+       ANIMAÇÕES
+    ========================================== */
+    .fade-up { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    .pcard:nth-child(2){transition-delay:.07s}
+    .pcard:nth-child(3){transition-delay:.14s}
+    .pcard:nth-child(4){transition-delay:.21s}
+    .pcard:nth-child(5){transition-delay:.28s}
+    .pcard:nth-child(6){transition-delay:.35s}
+
+    /* ==========================================
+       RESPONSIVO
+    ========================================== */
+    @media(max-width:900px){
+      .nav__links { display: none; }
+      .hamburger { display: flex; }
+      .hero__inner { grid-template-columns: 1fr; padding: 72px 24px 64px; gap: 40px; }
+      .hero__visual { display: none; }
+      .hero__stats { flex-wrap: wrap; gap: 24px; }
+      .terc__inner { grid-template-columns: 1fr; gap: 40px; }
+      .contact__card { grid-template-columns: 1fr; padding: 36px 28px; gap: 36px; }
+      .contact__map { display: none; }
+      .footer__top { grid-template-columns: 1fr; gap: 28px; }
+      .footer__bottom { flex-direction: column; text-align: center; }
+    }
+    @media(max-width:600px){
+      .cat-grid { grid-template-columns: repeat(2,1fr); }
+      .products-grid { grid-template-columns: 1fr; }
+      .hero__ctas { flex-direction: column; }
+      .btn { width: 100%; justify-content: center; }
+      .sec-band__inner { flex-direction: column; align-items: flex-start; }
+    }
+    @media(max-width:380px){
+      .cat-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ==========================================
+       PRINT / PDF
+    ========================================== */
+    @media print {
+      .nav, .hamburger, .nav__drawer,
+      .hero__ctas, .pcard__cta,
+      .contact__map, footer { display: none !important; }
+
+      html { scroll-behavior: auto; }
+      * { animation: none !important; transition: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+
+      .hero {
+        min-height: auto; page-break-after: always;
+        -webkit-print-color-adjust: exact; print-color-adjust: exact;
+      }
+      .sec-band {
+        -webkit-print-color-adjust: exact; print-color-adjust: exact;
+      }
+      .terc {
+        -webkit-print-color-adjust: exact; print-color-adjust: exact;
+        page-break-before: always;
+      }
+      .cat-section   { page-break-before: always; }
+      #higiene       { page-break-before: always; }
+      #nutri         { page-break-before: always; }
+      #repelente     { page-break-before: always; }
+      #gels          { page-break-before: always; }
+      .contact       { page-break-before: always; }
+
+      .pcard, .fade-up { opacity: 1 !important; transform: none !important; }
+      .products-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+      .pcard { break-inside: avoid; }
+      .contact__card { grid-template-columns: 1fr; }
+
+      .print-note {
+        display: block !important;
+        text-align: center; margin-top: 40px; padding-top: 20px;
+        border-top: 1px solid #ccc; font-size: .8rem; color: #888;
+      }
+    }
+    .print-note { display: none; }
+  </style>
+</head>
+
+<body>
+
+<!-- ============================================================
+     NAVBAR
+============================================================ -->
+<header class="nav">
+  <div class="nav__inner">
+    <a href="#inicio" class="nav__logo">Rey<em>mer</em></a>
+    <ul class="nav__links">
+      <li><a href="#categorias">Categorias</a></li>
+      <li><a href="#higiene">Higiene</a></li>
+      <li><a href="#nutri">Nutri</a></li>
+      <li><a href="#repelente">Repelente</a></li>
+      <li><a href="#gels">Géis</a></li>
+      <li><a href="#terceirizacao">Terceirização</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <div class="nav__right">
+      <button class="btn-icon" id="themeBtn" aria-label="Alternar tema">
+        <!-- sun icon -->
+        <svg id="iconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+        <!-- moon icon -->
+        <svg id="iconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="display:none">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+        </svg>
+        <span id="themeLabel">Escuro</span>
+      </button>
+      <button class="hamburger" id="hamBtn" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Drawer mobile -->
+<nav class="nav__drawer" id="drawer">
+  <a href="#categorias">Categorias</a>
+  <a href="#higiene">Higiene</a>
+  <a href="#nutri">Nutri</a>
+  <a href="#repelente">Repelente</a>
+  <a href="#gels">Géis de Contato</a>
+  <a href="#terceirizacao">Terceirização</a>
+  <a href="#contato">Contato</a>
+</nav>
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<section class="hero" id="inicio">
+  <div class="hero__grid"></div>
+  <div class="hero__blob hero__blob--a"></div>
+  <div class="hero__blob hero__blob--b"></div>
+  <div class="hero__blob hero__blob--c"></div>
+
+  <div class="hero__inner">
+    <!-- texto -->
+    <div>
+      <div class="hero__pill">
+        <span class="hero__pill-dot"></span>
+        Catálogo Oficial 2026
+      </div>
+      <h1 class="hero__h1">
+        Qualidade que<br>
+        <span class="hl">cuida de você</span>
+      </h1>
+      <p class="hero__p">
+        Linha completa de Oral Care, produtos de higiene premium, géis de
+        contato profissionais e repelente de alta performance. Tradição e
+        inovação desde o primeiro uso.
+      </p>
+      <div class="hero__ctas">
+        <a href="#categorias" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+          Ver Produtos
+        </a>
+        <a href="#contato" class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.22 1.22 2 2 0 012.22 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.58-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Fale Conosco
+        </a>
+      </div>
+      <div class="hero__stats">
+        <div>
+          <div class="hero__stat-n">12+</div>
+          <div class="hero__stat-l">Produtos</div>
+        </div>
+        <div>
+          <div class="hero__stat-n">5</div>
+          <div class="hero__stat-l">Linhas</div>
+        </div>
+        <div>
+          <div class="hero__stat-n">30+</div>
+          <div class="hero__stat-l">Apresentações</div>
+        </div>
+        <div>
+          <div class="hero__stat-n">2026</div>
+          <div class="hero__stat-l">Edição</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- visual -->
+    <div class="hero__visual" aria-hidden="true">
+      <div class="hero__stack">
+        <div class="hero__card hero__card--back">
+          <div class="hero__card-img">
+            <svg viewBox="0 0 72 72" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="8" y="18" width="56" height="38" rx="8"/>
+              <polyline points="18,37 26,27 34,47 44,30 52,37 62,37"/>
+            </svg>
+          </div>
+          <div class="hero__card-name">Gel ECG Profissional</div>
+          <span class="hero__card-pill">Linha Premium</span>
+        </div>
+        <div class="hero__card hero__card--front">
+          <div class="hero__card-img">
+            <svg viewBox="0 0 72 72" fill="none" stroke="rgba(255,255,255,.65)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M28 10 L28 26 Q18 38 18 52 C18 64 54 64 54 52 Q54 38 44 26 L44 10 Z"/>
+              <line x1="26" y1="17" x2="46" y2="17"/>
+              <path d="M30 46 Q36 40 42 46"/>
+            </svg>
+          </div>
+          <div class="hero__card-name">Álcool Gel Antisséptico</div>
+          <span class="hero__card-pill">Oral Care</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ÍNDICE DE CATEGORIAS
+============================================================ -->
+<section class="cat-section" id="categorias">
+  <div class="container">
+    <div class="cat-header fade-up">
+      <span class="tag-label">Navegue por Linha</span>
+      <h2 class="sec-title">Nossas Categorias</h2>
+      <p class="sec-sub">
+        Soluções completas em higiene, saúde e cuidado — desenvolvidas com
+        tecnologia, responsabilidade e compromisso com a qualidade.
+      </p>
+    </div>
+    <div class="cat-grid">
+
+      <a href="#higiene" class="cat-card fade-up">
+        <div class="cat-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="cat-name">Higiene Pessoal</div>
+        <div class="cat-count">Álcool Gel · Antisséptico · Sabonete</div>
+      </a>
+
+      <a href="#higiene" class="cat-card fade-up">
+        <div class="cat-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+        </div>
+        <div class="cat-name">Branco Perolizado</div>
+        <div class="cat-count">500 ml · 1L · 5L</div>
+      </a>
+
+      <a href="#nutri" class="cat-card fade-up">
+        <div class="cat-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <div class="cat-name">Linha Nutri</div>
+        <div class="cat-count">Nutrição & Cuidado · 100ml e 200ml</div>
+      </a>
+
+      <a href="#repelente" class="cat-card fade-up">
+        <div class="cat-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+        </div>
+        <div class="cat-name">Repelente Spray</div>
+        <div class="cat-count">4h de proteção · 100ml e 200ml</div>
+      </a>
+
+      <a href="#gels" class="cat-card fade-up">
+        <div class="cat-icon">
+          <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div class="cat-name">Géis de Contato</div>
+        <div class="cat-count">Ultrassom · ECG · Fisioterapia</div>
+      </a>
+
+      <a href="#terceirizacao" class="cat-card fade-up">
+        <div class="cat-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+        </div>
+        <div class="cat-name">Terceirização</div>
+        <div class="cat-count">Fabricação sob encomenda</div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     LINHA DE HIGIENE
+============================================================ -->
+<section id="higiene">
+  <div class="sec-band">
+    <svg class="sec-band__wave" viewBox="0 0 1440 44" preserveAspectRatio="none">
+      <path d="M0 44L1440 44L1440 0C1200 38 720 52 0 0Z" fill="var(--bg)"/>
+    </svg>
+    <div class="sec-band__inner">
+      <div>
+        <div class="sec-band__tag">Oral Care & Higiene</div>
+        <h2 class="sec-band__h2">Linha de Higiene Pessoal</h2>
+      </div>
+      <span class="sec-band__badge">6 Produtos</span>
+    </div>
+  </div>
+
+  <div class="products">
+    <div class="container">
+      <div class="products-grid">
+
+        <!-- PRODUTO 1 — Álcool Gel linha completa -->
+        <article class="pcard">
+          <div class="pcard__img">
+            <div class="pcard__placeholder">
+              <svg viewBox="0 0 56 56"><path d="M20 8 L20 24 Q12 34 12 46 C12 54 44 54 44 46 Q44 34 36 24 L36 8Z"/><line x1="18" y1="16" x2="38" y2="16"/><path d="M22 40 Q28 34 34 40"/></svg>
+              <span>img/alcool-gel-linha.jpg</span>
+            </div>
+            <span class="pcard__badge">Linha Completa</span>
+          </div>
+          <div class="pcard__body">
+            <div class="pcard__cat">Higiene</div>
+            <h3 class="pcard__name">Álcool Gel Antisséptico</h3>
+            <p class="pcard__desc">
+              Fórmula antisséptica de alta eficácia, textura suave, secagem
+              rápida e sem resíduos. Ideal para uso contínuo em ambientes
+              domésticos, hospitalares e industriais.
+            </p>
+            <div class="pcard__specs-title">Apresentações disponíveis</div>
+            <div class="pcard__tags">
+              <span class="pcard__tag">100 ml</span>
+              <span class="pcard__tag">250 ml</span>
+              <span class="pcard__tag">500 ml</span>
+              <span class="pcard__tag">1,1 L Refil</span>
+              <span class="pcard__tag">1,1 L Válvula</span>
+              <span class="pcard__tag">1,1 L KIT</span>
+              <span class="pcard__tag">2,2 L KIT</span>
+            </div>
+            <div class="pcard__footer">
+              <span class="pcard__contact">Consulte disponibilidade</span>
+              <a href="#contato" class="pcard__cta">
+                Solicitar
+                <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUTO 2 — Antisséptico Bucal -->
+        <article class="pcard">
+          <div class="pcard__img">
+            <div class="pcard__placeholder">
+              <svg viewBox="0 0 56 56"><path d="M20 6 C20 6 14 16 14 30 C14 44 28 50 28 50 C28 50 42 44 42 30 C42 16 36 6 36 6 Z"/><path d="M22 26 Q28 20 34 26"/><circle cx="28" cy="14" r="4"/></svg>
+              <span>img/antissetico-bucal.jpg</span>
+            </div>
+            <span class="pcard__badge">Oral Care</span>
+          </div>
+          <div class="pcard__body">
+            <div class="pcard__cat">Oral Care</div>
+            <h3 class="pcard__name">Antisséptico Bucal</h3>
+            <p class="pcard__desc">
+              Fórmula desenvolvida para higiene oral completa. Combate
+              bactérias, refresca o hálito e protege gengivas. Formulação
+              de uso diário, suave e eficaz.
+            </p>
+            <div class="pcard__specs-title">Apresentações disponíveis</div>
+            <div class="pcard__tags">
+              <span class="pcard__tag">250 ml</span>
+              <span class="pcard__tag">500 ml</span>
+              <span class="pcard__tag">1,1 L Refil</span>
+              <span class="pcard__tag">1,1 L KIT</span>
+            </div>
+            <div class="pcard__footer">
+              <span class="pcard__contact">Consulte disponibilidade</span>
+              <a href="#contato" class="pcard__cta">
+                Solicitar
+                <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUTO 3 — Sabonete Líquido -->
+        <article class="pcard">
+          <div class="pcard__img">
+            <div class="pcard__placeholder">
+              <svg viewBox="0 0 56 56"><rect x="14" y="18" width="28" height="30" rx="6"/><path d="M20 18 C20 12 36 12 36 18"/><circle cx="28" cy="10" r="3"/><path d="M22 32 Q28 26 34 32"/></svg>
+              <span>img/sabonete-liquido.jpg</span>
+            </div>
+          </div>
+          <div class="pcard__body">
+            <div class="pcard__cat">Higiene</div>
+            <h3 class="pcard__name">Sabonete Líquido</h3>
+            <p class="pcard__desc">
+              Sabonete líquido suave com pH balanceado. Limpa profundamente
+              sem ressecar, com aroma agradável e longa duração. Indicado
+              para uso frequente.
+            </p>
+            <div class="pcard__specs-title">Apresentações disponíveis</div>
+            <div class="pcard__tags">
+              <span class="pcard__tag">60 ml</span>
+              <span class="pcard__tag">250 ml</span>
+              <span class="pcard__tag">500 ml</span>
+              <span class="pcard__tag">1,1 L</span>
+              <span class="pcard__tag">1,1 L KIT</span>
+            </div>
+            <div class="pcard__footer">
+              <span class="pcard__contact">Consulte disponibilidade</span>
+              <a href="#contato" class="pcard__cta">
+                Solicitar
+                <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUTO 4 — Condicionador / Shampoo 500ml e 1L -->
+        <article class="pcard">
+          <div class="pcard__img">
+            <div class="pcard__placeholder">
+              <svg viewBox="0 0 56 56"><ellipse cx="28" cy="38" rx="14" ry="10"/><rect x="22" y="12" width="12" height="26" rx="6"/><line x1="28" y1="8" x2="28" y2="12"/><circle cx="28" cy="7" r="2"/></svg>
+              <span>img/produto-500ml-1l.jpg</span>
+            </div>
+          </div>
+          <div class="pcard__body">
+            <div class="pcard__cat">Higiene</div>
+            <h3 class="pcard__name">Produto de Higiene Premium</h3>
+            <p class="pcard__desc">
+              Formulação premium para uso pessoal, com componentes ativos de
+              alta concentração. Embalagem prática e econômica, disponível
+              em duas versões.
+            </p>
+            <div class="pcard__specs-title">Apresentações disponíveis</div>
+            <div class="pcard__tags">
+
+
